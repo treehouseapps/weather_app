@@ -1,43 +1,29 @@
 # React + Vite
-
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
 Installation
-Clone the repository
-
-bash
-Copy
-Edit
+1, Clone the repository
 git clone https://github.com/yourusername/weather-app.git
-Navigate to the project directory
 
-bash
-Copy
-Edit
+2, Navigate to the project directory
 cd weather-app
-Install dependencies
 
-bash
-Copy
-Edit
+3, Install dependencies
 npm install
-Create an .env file for API keys
 
+4,Create an .env file for API keys
 Add your weather API key (e.g., OpenWeatherMap) in the .env file:
-bash
-Copy
-Edit
 VITE_WEATHER_API_KEY=your-api-key-here
-Run the development server
 
-bash
-Copy
-Edit
+5, Run the development server
 npm run dev
-Open your browser and go to http://localhost:3000 to view the app.
+
+6, Open your browser and go to http://localhost:3000 to view the app.
 
 Usage
 Enter the name of a city in the search bar to get the current weather information.
 The app will display the temperature in Celsius, the weather condition, and the rain probability.
+
 Contributing
 Feel free to fork the repository and submit pull requests if you would like to contribute. Any improvements or bug fixes are welcome!
 
