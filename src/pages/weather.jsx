@@ -102,9 +102,9 @@ const Weather = () => {
                             display: "flex",
                             flexDirection: "column",
                         }}>
-                        <Typography variant="h4" align="center" mt={4}>
+                        <Typography variant="h5" align="center" mt={4}>
                             <LinearProgress />
-                            <Typography variant="h5" color="white" align="center" mt={4}>
+                            <Typography color="white" align="center" mt={4}>
                                 Loading...
                             </Typography>
                         </Typography>
@@ -240,7 +240,7 @@ const Weather = () => {
             </Box>
 
 
-        </Box>
+        </Box >
     );
 }
 

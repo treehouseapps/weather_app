@@ -21,24 +21,26 @@ const Search = () => {
         name: "Paris",
         temperature: 25,
         time: "9:33"
+    }, ,
+    {
+        name: "Ethiopia",
+        temperature: 37,
+        time: "4:33"
     },
     {
         name: "London",
         temperature: 22,
-        time: "4:33"
-    },
-    {
-        name: "Berlin",
-        temperature: 20,
-        time: "1:33"
-    },
+        time: "5:33"
+    }
     ]
 
     const submit = (e) => {
         e.preventDefault();
         navigate(`/weather?query=${search}`);
     };
-
+    const use = (item) => {
+        navigate(`/weather?query=${item}`);
+    }
     return (
         <Box
             sx={{
@@ -47,7 +49,7 @@ const Search = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 backgroundColor: "#f0f0f0",
-                padding: "16px", // Adds some padding to prevent overflow on smaller screens
+                padding: "16px",
             }}
         >
             <Box
@@ -59,14 +61,14 @@ const Search = () => {
                         lg: "375px",
                     },
                     maxWidth: "375px",
-                    height: "90%", // Make sure to allocate space for the footer
+                    height: "90%",
                     padding: "16px",
                     backgroundColor: "#001830",
                     color: "white",
                     borderRadius: "1rem",
                     display: "flex",
-                    flexDirection: "column", // To make the footer stay at the bottom
-                    justifyContent: "space-between", // Space between content and footer
+                    flexDirection: "column",
+                    justifyContent: "space-between",
                 }}
             >
                 <Typography variant="h5" fontWeight={"bold"}>
@@ -129,7 +131,9 @@ const Search = () => {
                                 display: "flex",
                                 justifyContent: "space-between",
                                 alignItems: "center",
-                            }}
+                            }
+                            }
+                            onClick={() => { use(item.name) }}
                         >
                             <Box>
                                 <Typography display={"flex"}
@@ -148,9 +152,9 @@ const Search = () => {
                     ))}
                 </Box>
 
-                <Footer /> {/* This will be at the bottom */}
+                <Footer />
             </Box>
-        </Box>
+        </Box >
     );
 }
 
