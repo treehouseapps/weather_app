@@ -131,6 +131,7 @@ const Search = () => {
                                 display: "flex",
                                 justifyContent: "space-between",
                                 alignItems: "center",
+                                cursor: "pointer"
                             }
                             }
                             onClick={() => { use(item.name) }}
